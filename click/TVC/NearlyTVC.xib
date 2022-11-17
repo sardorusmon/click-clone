@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="NearlyTVC" customModule="click" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-3" translatesAutoresizingMaskIntoConstraints="NO" id="Rf8-Np-d2Y">
+                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="duF-he-S6S"/>
+                            <constraint firstAttribute="height" constant="100" id="u4c-Rx-0fX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geo-YH-V9w">
+                        <rect key="frame" x="150" y="10" width="62" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="улица Саракульска,2-проезд дом 5 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-Mh-kR1">
+                        <rect key="frame" x="150" y="40.5" width="263" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.60358279940000004" green="0.60170704129999997" blue="0.65378117560000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AMx-t8-05G">
+                        <rect key="frame" x="150" y="89" width="93" height="15"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.triangle.turn.up.right.diamond.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-Lh-Oom">
+                                <rect key="frame" x="0.0" y="-0.5" width="22.5" height="16.5"/>
+                                <color key="tintColor" red="0.60358279940000004" green="0.60170704129999997" blue="0.65378117560000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="115 м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-03-OSU">
+                                <rect key="frame" x="30.5" y="0.0" width="42" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60358279940000004" green="0.60170704129999997" blue="0.65378117560000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-Tx-tos">
+                                <rect key="frame" x="80.5" y="0.0" width="12.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60358279940000004" green="0.60170704129999997" blue="0.65378117560000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="zBK-0a-Ct2"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8tm-Mh-kR1" firstAttribute="leading" secondItem="Rf8-Np-d2Y" secondAttribute="trailing" constant="40" id="KKO-Ok-tb3"/>
+                    <constraint firstItem="8tm-Mh-kR1" firstAttribute="top" secondItem="geo-YH-V9w" secondAttribute="bottom" constant="10" id="Peb-rb-Uk9"/>
+                    <constraint firstItem="geo-YH-V9w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VMx-bs-HOR"/>
+                    <constraint firstItem="Rf8-Np-d2Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YsA-Vl-AEq"/>
+                    <constraint firstItem="AMx-t8-05G" firstAttribute="top" secondItem="8tm-Mh-kR1" secondAttribute="bottom" constant="10" id="bCv-02-1d9"/>
+                    <constraint firstAttribute="bottom" secondItem="AMx-t8-05G" secondAttribute="bottom" constant="10" id="ff4-cQ-yg2"/>
+                    <constraint firstItem="AMx-t8-05G" firstAttribute="leading" secondItem="Rf8-Np-d2Y" secondAttribute="trailing" constant="40" id="j7o-sY-lQd"/>
+                    <constraint firstAttribute="bottom" secondItem="Rf8-Np-d2Y" secondAttribute="bottom" constant="10" id="pvc-RH-JZ1"/>
+                    <constraint firstItem="geo-YH-V9w" firstAttribute="leading" secondItem="Rf8-Np-d2Y" secondAttribute="trailing" constant="40" id="sAo-cB-upo"/>
+                    <constraint firstAttribute="trailing" secondItem="8tm-Mh-kR1" secondAttribute="trailing" constant="10" id="tQO-Ty-fhu"/>
+                    <constraint firstItem="Rf8-Np-d2Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vsQ-NL-tCs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.23223334549999999" green="0.23954042789999999" blue="0.30606251960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="cellImg" destination="Rf8-Np-d2Y" id="49M-Yw-Lmr"/>
+                <outlet property="distanceLbl" destination="1V8-03-OSU" id="uON-nQ-KH2"/>
+                <outlet property="locationLbl" destination="8tm-Mh-kR1" id="R0Y-F8-VRE"/>
+                <outlet property="titleLbl" destination="geo-YH-V9w" id="l4h-rw-Rym"/>
+            </connections>
+            <point key="canvasLocation" x="212.31884057971016" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.triangle.turn.up.right.diamond.fill" catalog="system" width="128" height="122"/>
+        <image name="image-3" width="600" height="400"/>
+    </resources>
+</document>

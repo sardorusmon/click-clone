@@ -9,8 +9,15 @@ import UIKit
 
 class MainVC: UIViewController {
     
+    
+    
     @IBOutlet weak var searchBar: UIView!
+    
+
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     
     var imgArr : [ImgDM] = [
         ImgDM(img: "image-1"),
@@ -26,6 +33,17 @@ class MainVC: UIViewController {
     
     ]
     
+    var tableArr : [TableViewDM] = [
+        TableViewDM(title: "Sunrise", location: "улица Саракульска,2-проезд дом 5 ", distance: "23", img: "image-1"),
+        TableViewDM(title: "Ramazon market", location: "улица Саракульска,2-проезд дом 5 ", distance: "66", img: "image-2"),
+        TableViewDM(title: "Osiyo meal", location: "улица Саракульска,2-проезд дом 8 ", distance: "50", img: "image-3"),
+        TableViewDM(title: "Donco xleb", location: "улица Саракульска,2-проезд дом 5 ", distance: "76", img: "image-4"),
+        TableViewDM(title: "Fruit market", location: "улица Саракульска,2-проезд дом 5 ", distance: "250", img: "image-5"),
+        TableViewDM(title: "Octankino", location: "улица Саракульска,2-проезд дом 5 ", distance: "123", img: "image-6"),
+        TableViewDM(title: "Vegetables", location: "улица Саракульска,2-проезд дом 5 ", distance: "98", img: "image-7"),
+    ]
+    var newArr : [TableViewDM] = []
+    
     
     
     
@@ -37,6 +55,12 @@ class MainVC: UIViewController {
     }
     
     func setUpCollectionView() {
+        
+        newArr = tableArr.sorted { distance1, distance2 in
+            Int(distance1.distance)!<Int(distance2.distance)!
+            
+        }
+        
         searchBar.layer.borderWidth = 2.0
         searchBar.layer.borderColor = #colorLiteral(red: 0.3912961483, green: 0.4023899734, blue: 0.4797745347, alpha: 1)
         
@@ -44,6 +68,10 @@ class MainVC: UIViewController {
         collectionView.dataSource = self
         collectionView.register(ItemCVC.nib(), forCellWithReuseIdentifier: ItemCVC.id)
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(NearlyTVC.nib(), forCellReuseIdentifier: NearlyTVC.id)
+        tableView.backgroundColor = .clear
         
     }
     
@@ -54,7 +82,13 @@ class MainVC: UIViewController {
         self.dismiss(animated: true)
     }
     
-
+    
+    
+    @IBAction func dfg(_ sender: Any) {
+        
+        print("gergergereR")
+    }
+    
     
     
     
@@ -84,4 +118,20 @@ extension MainVC : UICollectionViewDataSource{
     
     
     
+}
+
+extension MainVC : UITableViewDelegate{
+    
+}
+extension MainVC : UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NearlyTVC.id, for: indexPath) as? NearlyTVC else {return UITableViewCell()}
+        cell.updateTableView(info: newArr[indexPath.row])
+        return cell
+    }
 }

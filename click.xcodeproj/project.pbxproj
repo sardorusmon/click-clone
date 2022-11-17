@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E25ED362926041300A77995 /* NearlyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25ED342926041300A77995 /* NearlyTVC.swift */; };
+		2E25ED372926041300A77995 /* NearlyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25ED352926041300A77995 /* NearlyTVC.xib */; };
+		2E25ED392926178900A77995 /* TableViewDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25ED382926178900A77995 /* TableViewDM.swift */; };
 		2E3CBBA82924F7DB0040195F /* EX+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CBBA72924F7DB0040195F /* EX+UIView.swift */; };
 		2E3CBBAF2924FAAD0040195F /* ItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CBBAD2924FAAD0040195F /* ItemCVC.swift */; };
 		2E3CBBB02924FAAD0040195F /* ItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3CBBAE2924FAAD0040195F /* ItemCVC.xib */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E25ED342926041300A77995 /* NearlyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearlyTVC.swift; sourceTree = "<group>"; };
+		2E25ED352926041300A77995 /* NearlyTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearlyTVC.xib; sourceTree = "<group>"; };
+		2E25ED382926178900A77995 /* TableViewDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDM.swift; sourceTree = "<group>"; };
 		2E3CBBA72924F7DB0040195F /* EX+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EX+UIView.swift"; sourceTree = "<group>"; };
 		2E3CBBAD2924FAAD0040195F /* ItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCVC.swift; sourceTree = "<group>"; };
 		2E3CBBAE2924FAAD0040195F /* ItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCVC.xib; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		2E3CBBA62924F75A0040195F /* TVC */ = {
 			isa = PBXGroup;
 			children = (
+				2E25ED342926041300A77995 /* NearlyTVC.swift */,
+				2E25ED352926041300A77995 /* NearlyTVC.xib */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 				2ED171282924CB3600F0429F /* LaunchScreen.storyboard */,
 				2ED1712B2924CB3600F0429F /* Info.plist */,
 				2E3CBBB12924FB8E0040195F /* InfoDM.swift */,
+				2E25ED382926178900A77995 /* TableViewDM.swift */,
 			);
 			path = click;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E25ED372926041300A77995 /* NearlyTVC.xib in Resources */,
 				2ED1712A2924CB3600F0429F /* LaunchScreen.storyboard in Resources */,
 				2ED1713D2924E07800F0429F /* MainVC.xib in Resources */,
 				2ED171272924CB3600F0429F /* Assets.xcassets in Resources */,
@@ -187,9 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E25ED392926178900A77995 /* TableViewDM.swift in Sources */,
 				2ED1711E2924CB3400F0429F /* AppDelegate.swift in Sources */,
 				2E3CBBAF2924FAAD0040195F /* ItemCVC.swift in Sources */,
 				2E3CBBB22924FB8E0040195F /* InfoDM.swift in Sources */,
+				2E25ED362926041300A77995 /* NearlyTVC.swift in Sources */,
 				2ED1713C2924E07800F0429F /* MainVC.swift in Sources */,
 				2ED171382924CBDE00F0429F /* CheckVC.swift in Sources */,
 				2E3CBBA82924F7DB0040195F /* EX+UIView.swift in Sources */,
