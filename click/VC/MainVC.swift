@@ -6,16 +6,14 @@
 //
 
 import UIKit
+import SafariServices
 
 class MainVC: UIViewController {
     
     
     
     @IBOutlet weak var searchBar: UIView!
-    
-
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -45,8 +43,6 @@ class MainVC: UIViewController {
     var newArr : [TableViewDM] = []
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,39 +63,37 @@ class MainVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(ItemCVC.nib(), forCellWithReuseIdentifier: ItemCVC.id)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        collectionView.showsHorizontalScrollIndicator = false
         
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(NearlyTVC.nib(), forCellReuseIdentifier: NearlyTVC.id)
         tableView.backgroundColor = .clear
         
-    }
-    
-    
-    
-    @IBAction func humburgerTapped(_ sender: Any) {
         
-        self.dismiss(animated: true)
-    }
-    
-    
-    
-    @IBAction func dfg(_ sender: Any) {
         
-        print("gergergereR")
     }
-    
-    
-    
-    
     
 }
 
+
+//MARK:- UICollectionViewDelegate
 extension MainVC : UICollectionViewDelegate{
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+    }
+    
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        6
+    }
     
 }
 
+
+//MARK:- UICollectionViewDataSource
 extension MainVC : UICollectionViewDataSource{
     
     
@@ -114,15 +108,31 @@ extension MainVC : UICollectionViewDataSource{
         return cell
     }
     
+}
+
+//MARK:- UICollectionViewDelegateFlowLayout
+extension MainVC : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+      return CGSize(width: 95 , height: 95)
+        
+    }
+}
+
+
+//MARK:- UITableViewDelegate
+extension MainVC : UITableViewDelegate{
     
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        
+        
+    }
     
 }
 
-extension MainVC : UITableViewDelegate{
-    
-}
+
+//MARK:- UITableViewDataSource
 extension MainVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

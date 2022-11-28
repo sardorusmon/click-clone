@@ -38,7 +38,7 @@ class CheckVC: UIViewController {
         check()
 }
     @IBAction func deleteTapped(_ sender: Any) {
-        
+        cod.removeLast()
         passwordLbl.text = String(repeating: strStar, count: count-1)+String(repeating: str_, count: 5-count+1)
         count-=1
         deleteBtn.isEnabled = count > 0
@@ -59,8 +59,10 @@ class CheckVC: UIViewController {
         deleteBtn.isEnabled = true
         if count == 5 && (Int(cod) == oldcode) {
             let vc = MainVC(nibName: "MainVC", bundle: nil)
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            let navVC = UINavigationController(rootViewController: vc)
+            navVC.modalPresentationStyle = .fullScreen
+//            navVC.navigationBar.prefersLargeTitles = false
+            self.present(navVC, animated: true)
         }
         else if count == 5 {
             passwordLbl.text = String(repeating: str_, count: 5)

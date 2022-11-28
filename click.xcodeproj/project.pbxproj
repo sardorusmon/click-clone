@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0A5EC22926628F00CF83CD /* ShowMoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A5EC02926628F00CF83CD /* ShowMoreVC.swift */; };
+		2E0A5EC32926628F00CF83CD /* ShowMoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A5EC12926628F00CF83CD /* ShowMoreVC.xib */; };
 		2E25ED362926041300A77995 /* NearlyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25ED342926041300A77995 /* NearlyTVC.swift */; };
 		2E25ED372926041300A77995 /* NearlyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25ED352926041300A77995 /* NearlyTVC.xib */; };
 		2E25ED392926178900A77995 /* TableViewDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25ED382926178900A77995 /* TableViewDM.swift */; };
@@ -21,9 +23,13 @@
 		2ED171392924CBDE00F0429F /* CheckVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED171372924CBDE00F0429F /* CheckVC.xib */; };
 		2ED1713C2924E07800F0429F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1713A2924E07800F0429F /* MainVC.swift */; };
 		2ED1713D2924E07800F0429F /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED1713B2924E07800F0429F /* MainVC.xib */; };
+		2EE0D0402934D88B00E4441B /* ShowMoreTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0D03E2934D88B00E4441B /* ShowMoreTVC.swift */; };
+		2EE0D0412934D88B00E4441B /* ShowMoreTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0D03F2934D88B00E4441B /* ShowMoreTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E0A5EC02926628F00CF83CD /* ShowMoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreVC.swift; sourceTree = "<group>"; };
+		2E0A5EC12926628F00CF83CD /* ShowMoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMoreVC.xib; sourceTree = "<group>"; };
 		2E25ED342926041300A77995 /* NearlyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearlyTVC.swift; sourceTree = "<group>"; };
 		2E25ED352926041300A77995 /* NearlyTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearlyTVC.xib; sourceTree = "<group>"; };
 		2E25ED382926178900A77995 /* TableViewDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDM.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		2ED171372924CBDE00F0429F /* CheckVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckVC.xib; sourceTree = "<group>"; };
 		2ED1713A2924E07800F0429F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2ED1713B2924E07800F0429F /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		2EE0D03E2934D88B00E4441B /* ShowMoreTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreTVC.swift; sourceTree = "<group>"; };
+		2EE0D03F2934D88B00E4441B /* ShowMoreTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMoreTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +75,18 @@
 			children = (
 				2E25ED342926041300A77995 /* NearlyTVC.swift */,
 				2E25ED352926041300A77995 /* NearlyTVC.xib */,
+				2EE0D03E2934D88B00E4441B /* ShowMoreTVC.swift */,
+				2EE0D03F2934D88B00E4441B /* ShowMoreTVC.xib */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
 		};
-		2E3CBBB32924FB940040195F /* DM\ */ = {
+		2E3CBBB32924FB940040195F /* DM */ = {
 			isa = PBXGroup;
 			children = (
 				2E3CBBA72924F7DB0040195F /* EX+UIView.swift */,
 			);
-			path = "DM\\";
+			path = DM;
 			sourceTree = "<group>";
 		};
 		2ED171112924CB3400F0429F = {
@@ -98,7 +108,7 @@
 		2ED1711C2924CB3400F0429F /* click */ = {
 			isa = PBXGroup;
 			children = (
-				2E3CBBB32924FB940040195F /* DM\ */,
+				2E3CBBB32924FB940040195F /* DM */,
 				2E3CBBA62924F75A0040195F /* TVC */,
 				2E3CBBA52924F74B0040195F /* CVC */,
 				2ED171312924CB8200F0429F /* VC */,
@@ -119,6 +129,8 @@
 				2ED171372924CBDE00F0429F /* CheckVC.xib */,
 				2ED1713A2924E07800F0429F /* MainVC.swift */,
 				2ED1713B2924E07800F0429F /* MainVC.xib */,
+				2E0A5EC02926628F00CF83CD /* ShowMoreVC.swift */,
+				2E0A5EC12926628F00CF83CD /* ShowMoreVC.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -182,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E25ED372926041300A77995 /* NearlyTVC.xib in Resources */,
+				2EE0D0412934D88B00E4441B /* ShowMoreTVC.xib in Resources */,
 				2ED1712A2924CB3600F0429F /* LaunchScreen.storyboard in Resources */,
 				2ED1713D2924E07800F0429F /* MainVC.xib in Resources */,
 				2ED171272924CB3600F0429F /* Assets.xcassets in Resources */,
+				2E0A5EC32926628F00CF83CD /* ShowMoreVC.xib in Resources */,
 				2ED171392924CBDE00F0429F /* CheckVC.xib in Resources */,
 				2E3CBBB02924FAAD0040195F /* ItemCVC.xib in Resources */,
 			);
@@ -199,10 +213,12 @@
 			files = (
 				2E25ED392926178900A77995 /* TableViewDM.swift in Sources */,
 				2ED1711E2924CB3400F0429F /* AppDelegate.swift in Sources */,
+				2E0A5EC22926628F00CF83CD /* ShowMoreVC.swift in Sources */,
 				2E3CBBAF2924FAAD0040195F /* ItemCVC.swift in Sources */,
 				2E3CBBB22924FB8E0040195F /* InfoDM.swift in Sources */,
 				2E25ED362926041300A77995 /* NearlyTVC.swift in Sources */,
 				2ED1713C2924E07800F0429F /* MainVC.swift in Sources */,
+				2EE0D0402934D88B00E4441B /* ShowMoreTVC.swift in Sources */,
 				2ED171382924CBDE00F0429F /* CheckVC.swift in Sources */,
 				2E3CBBA82924F7DB0040195F /* EX+UIView.swift in Sources */,
 			);
